@@ -1,0 +1,24 @@
+section#hero {
+    min-height: 20rem;
+    background-color: var(--pico-secondary-background);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 20px);
+    margin-left: calc(-50vw + 50% + 10px);
+}
+
+section#hero h1 {
+    color: var(--pico-secondary-inverse);
+    font-size: 8rem;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+article#rand-num {
+    font-size: 10rem;
+    color: var(--pico-primary);
+    font-weight: bold;
+    text-align: center;
+}

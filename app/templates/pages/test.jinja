@@ -1,0 +1,14 @@
+{% extends 'pages/base.jinja' %}
+
+{% block title %}
+Flask Demo - Test Page
+{% endblock %}
+
+{% block content %}
+<section>
+    <h2>Testing Flask and jinja</h2>
+
+    <p>{{ lipsum(3) }}</p>
+</section>
+
+{% endblock %}

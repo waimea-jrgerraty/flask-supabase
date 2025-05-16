@@ -1,0 +1,16 @@
+{% extends 'pages/base.jinja' %}
+
+{% block title %}
+Flask Demo - Random Number
+{% endblock %}
+
+{% block content %}
+<section>
+    <h2>Here is your daily random number...</h2>
+
+    <article id="rand-num">
+        {{ number }}
+    </article>
+</section>
+
+{% endblock %}
