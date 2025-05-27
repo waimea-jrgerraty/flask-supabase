@@ -1,12 +1,31 @@
 {% extends 'pages/base.jinja' %}
 
 {% block title %}
-Flask Demo
+Flask Supabase Demo
 {% endblock %}
 
 {% block content %}
 <section id="hero">
-    <h1>Hello World</h1>
+    <h1>Flask And Supabase Demo</h1>
 </section>
 
+<section id="things">
+    {% for thing in things %}
+    <article>
+        <header>
+            <h3>{{ thing["name"] }}</h3>
+        </header>
+
+        Cost: $<strong>{{ '%.2f'%thing["price"] }}</strong>
+        <br>
+        Rating: <strong>{{ '%.1f'%thing["rating"] }}★</strong>
+        <br><br>
+        {{ thing["description"] }}
+
+        <footer>
+            <a>Delete</a>
+        </footer>
+    </article>
+    {% endfor %}
+</section>
 {% endblock %}
